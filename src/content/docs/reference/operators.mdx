@@ -19,18 +19,10 @@ operators:
     description: 'An in-memory cache shared between pipelines.'
     example: 'cache "w01wyhTZm3", ttl=10min'
     path: 'reference/operators/cache'
-  - name: 'local'
-    description: 'Forces a pipeline to run locally.'
-    example: 'local { sort foo }'
-    path: 'reference/operators/local'
   - name: 'measure'
     description: 'Replaces the input with metrics describing the input.'
     example: 'measure'
     path: 'reference/operators/measure'
-  - name: 'remote'
-    description: 'Forces a pipeline to run remotely at a node.'
-    example: 'remote { version }'
-    path: 'reference/operators/remote'
   - name: 'strict'
     description: 'Treats all warnings as errors.'
     example: 'strict { assert false }'
@@ -1740,26 +1732,10 @@ cache "w01wyhTZm3", ttl=10min
 
 </ReferenceCard>
 
-<ReferenceCard title="local" description="Forces a pipeline to run locally." href="/reference/operators/local">
-
-```tql
-local { sort foo }
-```
-
-</ReferenceCard>
-
 <ReferenceCard title="measure" description="Replaces the input with metrics describing the input." href="/reference/operators/measure">
 
 ```tql
 measure
-```
-
-</ReferenceCard>
-
-<ReferenceCard title="remote" description="Forces a pipeline to run remotely at a node." href="/reference/operators/remote">
-
-```tql
-remote { version }
 ```
 
 </ReferenceCard>
